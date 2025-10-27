@@ -1,0 +1,33 @@
+CREATE TABLE masjid (
+  id INT PRIMARY KEY,
+  name VARCHAR(200) NOT NULL,
+  location VARCHAR(255),
+  address TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS nasehat (
+  id_masjid INT PRIMARY KEY,
+  body JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE laporan (
+  id_masjid INT PRIMARY KEY,
+  jenis VARCHAR(50),
+  keterangan TEXT,
+  saldo_awal DECIMAL(12,2),
+  saldo_akhir DECIMAL(12,2),
+  masuk DECIMAL(10,2),
+  keluar DECIMAL(10,2),
+  tanggal DATE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE iqomahPr (
+  id_masjid INT PRIMARY KEY,
+  title VARCHAR(255),
+  body TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
