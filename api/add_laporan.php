@@ -49,6 +49,20 @@ try {
         ':keterangan'  => $keterangan
     ]);
 
+    $sql_his = "
+        INSERT INTO history_laporan (id_masjid, saldo_awal, saldo_akhir, masuk, keluar, keterangan)
+        VALUES (:id_masjid, :saldo_awal, :saldo_akhir, :masuk, :keluar, :keterangan)";
+
+    $stmt_his = $pdo->prepare($sql_his);
+    $stmt_his->execute([
+        ':id_masjid'   => $id_masjid,
+        ':saldo_awal'  => $saldo_awal,
+        ':saldo_akhir' => $saldo_akhir,
+        ':masuk'       => $masuk,
+        ':keluar'      => $keluar,
+        ':keterangan'  => $keterangan
+    ]);
+
     echo json_encode([
         'status' => 'success',
         'message' => 'Data berhasil disimpan (insert/update)',

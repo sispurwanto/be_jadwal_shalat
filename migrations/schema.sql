@@ -32,6 +32,19 @@ CREATE TABLE laporan (
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+CREATE TABLE history_laporan (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  id_masjid INT,
+  jenis VARCHAR(50),
+  keterangan TEXT,
+  saldo_awal DECIMAL(12,2),
+  saldo_akhir DECIMAL(12,2),
+  masuk DECIMAL(10,2),
+  keluar DECIMAL(10,2),
+  tanggal DATE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE iqomahpr (
   id_masjid INT PRIMARY KEY,
   title VARCHAR(255),
