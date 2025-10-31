@@ -1,0 +1,11 @@
+curl --request POST \
+  --url https://istiqomahberamal.com//server/api/add_iqomah.php \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0' \
+  --data '{
+    "id_masjid": 1,
+    "body": {"subuh": 25,"dzuhur": 15,"ashar": 15,"maghrib": 10,"isya": 10,"shalatDisplay": 15}
+}'

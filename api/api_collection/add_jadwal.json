@@ -1,0 +1,60 @@
+curl --request POST \
+  --url https://istiqomahberamal.com//server/api/add_jadwal_kajian.php \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0' \
+  --data '{
+    "id_masjid": 1,
+    "title": "",
+    "durasi": {
+        "show_live": 1,
+        "hide_live": 5,
+        "durasi_perjadwal": 10
+    },
+    "body": [
+        {
+            "materi": "Adab Dan Akhlak Penuntut Ilmu", 
+            "rujukan": "Karya Ustadz Yazid bin Abdul Qadir Jawas Rahimahullah",
+            "pemateri": "Ustadz Abu Ukasyah Dindin Kurniawan", 
+            "waktu": "Kajian Rutin Setiap Ahad Ba'\''da Subuh - selesai pekan ke-1 dan ke-4"
+        },
+        {
+            "materi": "SIFAT SHALAT NABI",
+            "rujukan": "Karya Syaikh Al-Albani",
+            "pemateri": "Ustadz Abu Arika Jamiludin, Lc.", 
+            "waktu": "Kajian Rutin Setiap Kamis Ba'\''da Maghrib - Selesai pekan ke-1 dan ke-3"
+        },
+        {
+            "materi": "Aqidah (Penjabaran Asmaul Husna)", 
+            "rujukan": "-",
+            "pemateri": "Ustadz Wukir Saputro, Lc. M.Pd", 
+            "waktu": "Setiap Sabtu Ba'\''da Shalat Maghrib - selesai pekan ke-1 dan ke-3"
+        },
+        {
+            "materi": "Al Bidayah Fi Al-'\''Aqidah", 
+            "rujukan": "Karya Syekh Abdussalam Baali",
+            "pemateri": "Ustadz Muhammad Alpen Hidayatullah Lc.", 
+            "waktu": "Kajian Rutin Setiap Senin Ba'\''da Shalat Maghrib - selesai"
+        },
+        {
+            "materi": "Kajian Bahasa Arab", 
+            "rujukan": "-",
+            "pemateri": "Ustadz Ahmad", 
+            "waktu": "Setiap Sabtu Ba'\''da Subuh - selesai pekan ke-2 dan ke-4"
+        },
+        {
+            "materi": "Kajian Bahasa Arab", 
+            "rujukan": "-",
+            "pemateri": "Ustadz Ahmad", 
+            "waktu": "Setiap Ahad Ba'\''da Subuh - selesai pekan ke-1 dan ke-3"
+        },
+        {
+            "materi": "Kajian Tahsin Al-Qur'\''an Ummahat", 
+            "rujukan": "-",
+            "pemateri": "Ustadzah Lisa", 
+            "waktu": "Setiap Rabu pukul 09.00 - menjelang shalat Dzuhur"
+        }
+    ]
+}'

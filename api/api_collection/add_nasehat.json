@@ -1,0 +1,52 @@
+curl --request POST \
+  --url https://istiqomahberamal.com//server/api/add_nasehat.php \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0' \
+  --data '{
+    "id_masjid": 1,
+    "body": [
+        {
+            "text": "Sesungguhnya shalat itu mencegah dari perbuatan keji dan mungkar.",
+            "ref": "QS. Al-Ankabut: 45"
+        },
+        {
+            "text": "Perbanyaklah mengingat kematian, karena itu membersihkan dosa.",
+            "ref": "HR. Ibnu Majah"
+        },
+        {
+            "text": "Jagalah shalat lima waktu, karena ia tiang agama.",
+            "ref": "HR. Ahmad"
+        },
+        {
+            "text": "Dengan mengingat Allah hati menjadi tenteram.",
+            "ref": "QS. Ar-Ra'\''d: 28"
+        },
+        {
+            "text": "Barang siapa meninggalkan shalat dengan sengaja, maka ia telah kafir.",
+            "ref": "HR. Tirmidzi"
+        },
+        {
+            "text": "Shalatlah sebelum dishalatkan.",
+            "ref": "HR. Al-Baihaqi"
+        },
+        {
+            "text": "Dekatkanlah diri kalian kepada Allah dengan amal yang paling dicintai-Nya, yaitu shalat.",
+            "ref": "HR. Bukhari"
+        },
+        {
+            "text": "Antara seorang hamba dan kekafiran adalah meninggalkan shalat.",
+            "ref": "HR. Muslim"
+        },
+        {
+            "text": "Doa itu adalah ibadah.",
+            "ref": "HR. Tirmidzi"
+        },
+        {
+            "text": "Shalat adalah cahaya.",
+            "ref": "HR. Muslim"
+        }
+    ]
+}'

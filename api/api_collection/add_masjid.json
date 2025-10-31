@@ -1,0 +1,15 @@
+curl --request POST \
+  --url https://istiqomahberamal.com//server/api/add_masjid.php \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0' \
+  --data '{
+    "id": 1,
+    "name": "Mushola Al Muhajirin",
+    "location": "Kp. Cinyosog - Pasir Angin - Cileungsi Bogor",
+    "latitude": -6.452,
+    "longitude": 106.97,
+    "timezone": 7
+}'

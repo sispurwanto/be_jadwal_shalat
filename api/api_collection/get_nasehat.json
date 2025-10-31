@@ -1,0 +1,6 @@
+curl --request GET \
+  --url 'https://istiqomahberamal.com//server/api/get_nasehat.php?id_masjid=1' \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0'

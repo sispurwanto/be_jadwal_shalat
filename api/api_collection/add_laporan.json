@@ -1,0 +1,15 @@
+curl --request POST \
+  --url https://istiqomahberamal.com//server/api/add_laporan.php \
+  --header 'Accept: */*' \
+  --header 'Accept-Encoding: gzip, deflate, br' \
+  --header 'Connection: keep-alive' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: EchoapiRuntime/1.1.0' \
+  --data '{
+    "id_masjid": 1,
+    "saldo_awal": 0,
+    "saldo_akhir": 0,
+    "masuk": 0,
+    "keluar": 0,
+    "keterangan": "Laporan Per Oktober"
+}'
